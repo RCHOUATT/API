@@ -1,0 +1,107 @@
+*
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #c9c9c9;
+    display: flex;
+    justify-content: center;
+}
+.d1{
+    background: url(image/1.jpg) center no-repeat fixed;
+    background-size: 100% 100%;
+}
+.d2{
+    background: url(image/2.jpg) center/100% 100% fixed;
+}
+.d3{
+    background: url(image/3.jpg) center/100% 100% fixed;
+}
+.d4{
+    background: url(image/4.jpg) center/100% 100% fixed;
+}
+.d5{
+    background: url(image/5.jpg) center/100% 100% fixed;
+}
+.btn1
+{
+    margin-right: 5px;
+}
+.btn1
+{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 230, 0, 0.7);
+    text-align: center;
+    border-radius: 50%;
+    line-height: 0,5em;
+    border: 0;
+}
+.btn2
+{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(0, 102, 255, 0.7);
+    text-align: center;
+    border-radius: 50%;
+    line-height: 0,5em;
+    border: 0;
+}
+.btn3
+{
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 0, 128, 0.7);
+    text-align: center;
+    border-radius: 50%;
+    line-height: 0,5em;
+    border: 0;
+}
+.image button
+{
+    display: none;
+}
+.active button
+{
+    display: inline-block;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image
+{
+    flex: 0.5;
+    margin: auto 5px;
+    border-radius: 20px;
+    height: 300px;
+    padding: 10px;
+    transition: flex 0.7s ease;
+}
+.image:hover
+{
+    cursor: pointer;
+}
+@media (max-width : 450px) {
+    .container
+    {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.active
+{
+    flex: 5;
+    transition: 0.5s;
+}
